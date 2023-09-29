@@ -35,7 +35,7 @@ class Rectangle():
         else:
             return False
         
-    # checks to see that height and width are both greater than zero
+    # Checks to see that height and width are both greater than zero
 
 
     # Create the "area" method
