@@ -64,7 +64,7 @@ class Rectangle():
         else:
             return 2 * (self.width + self.height)
     
-    # checks to see that height, width are valid and if it is calculates the perimeter
+    # Checks to see that height, width are valid and if it is calculates the perimeter
 
 
 def main():
