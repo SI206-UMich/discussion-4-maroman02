@@ -9,7 +9,7 @@ class Rectangle():
         self.width  = width
         self.height = height
 
-    # sets attributes to passed in arguments
+    # Sets attributes to passed in arguments
 
 
     # Create the "__str__" method
@@ -20,7 +20,7 @@ class Rectangle():
     def __str__(self):
         return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
 
-    # returns statement with dimensions of the rectangle object
+    # Returns statement with dimensions of the rectangle object
 
 
     # Create the "verify_input" method
@@ -49,7 +49,7 @@ class Rectangle():
         else:
             return self.width * self.height
         
-    # checks to see that height, width are valid and if it is calculates the area
+    # Checks to see that height, width are valid and if it is calculates the area
 
 
 
