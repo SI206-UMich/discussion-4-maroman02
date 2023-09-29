@@ -5,8 +5,11 @@ class Rectangle():
     # It sets an instance variable, "width" to the passed argument, width
     # It sets an instance variable, "height" to the passed argument, height
 
-    # YOUR CODE HERE
+    def __init__(self, width, height):
+        self.width  = width
+        self.height = height
 
+    # sets attributes to passed in arguments
 
 
     # Create the "__str__" method
@@ -14,8 +17,10 @@ class Rectangle():
     # It returns a string, 
     #       "A rectangle with width ____ and height ____"
 
-    # YOUR CODE HERE
+    def __str__(self):
+        return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
 
+    # returns statement with dimensions of the rectangle object
 
 
     # Create the "verify_input" method
@@ -24,8 +29,13 @@ class Rectangle():
     #       True if the width and height are positive numbers
     #       False otherwise
 
-    # YOUR CODE HERE
-
+    def verify_input(self):
+        if self.width > 0 and self.height > 0:
+            return True
+        else:
+            return False
+        
+    # checks to see that height and width are both greater than zero
 
 
     # Create the "area" method
@@ -33,7 +43,13 @@ class Rectangle():
     # It first verifies inputs and return "Invalid input" if they are invalid.
     # Otherwise, it returns the area of the rectangle.
 
-    # YOUR CODE HERE
+    def area(self):
+        if self.verify_input() == False:
+            return "Invalid input"
+        else:
+            return self.width * self.height
+        
+    # checks to see that height, width are valid and if it is calculates the area
 
 
 
@@ -42,8 +58,13 @@ class Rectangle():
     # It first verifies inputs and return "Invalid input" if they are invalid.
     # Otherwise, it returns the perimeter of the rectangle.
 
-    # YOUR CODE HERE
+    def perimeter(self):
+        if self.verify_input() == False:
+            return "Invalid input"
+        else:
+            return 2 * (self.width + self.height)
     
+    # checks to see that height, width are valid and if it is calculates the perimeter
 
 
 def main():
